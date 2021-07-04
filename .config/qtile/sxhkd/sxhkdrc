@@ -100,12 +100,12 @@ ctrl + alt + p
 #Scrot
 # Full screen
 Print
-    flameshot full -c -p ~/Pictures/flameshots/
+    flameshot full -c -p ~/Pictures/screenshots/
 #scrot '%a-%b_%d_%Y-%T.png' -e 'mv $f ~/Pictures/screenshots'
 
 # Selection
 shift + Print
-    flameshot gui -p ~/Pictures/flameshots/
+    flameshot gui -p ~/Pictures/screenshots/
 #scrot -s '%a-%b_%d_%Y-%T.png' -e 'mv $f ~/Pictures/screenshots'
 
 # Focused Window
