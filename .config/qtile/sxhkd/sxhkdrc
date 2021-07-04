@@ -29,7 +29,7 @@ super + b
 
 #File manager
 super + f
-    pcmanfm
+    thunar
 
 #Ranger
 super + shift + f
