@@ -98,19 +98,19 @@ ctrl + alt + p
 #################################################################
 
 #Scrot
-# Full screen
+# Save and copy to clipboard "Full screen"
 Print
     flameshot full -c -p ~/Pictures/screenshots/
 #scrot '%a-%b_%d_%Y-%T.png' -e 'mv $f ~/Pictures/screenshots'
 
-# Selection
+# Save "Selection"
 shift + Print
     flameshot gui -p ~/Pictures/screenshots/
 #scrot -s '%a-%b_%d_%Y-%T.png' -e 'mv $f ~/Pictures/screenshots'
 
-# Focused Window
-#alt + Print
-#    scrot -u '%a-%b_%d_%Y-%T.png' -e 'mv $f ~/Pictures/screenshots'
+# Save "Focused Window"
+alt + Print
+    scrot -u '%a-%b_%d_%Y-%T.png' -e 'mv $f ~/Pictures/screenshots'
 
 #MAIM
 # Selection to clipboard
