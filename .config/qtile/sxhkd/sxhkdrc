@@ -110,7 +110,7 @@ shift + Print
 
 # Save "Focused Window"
 alt + Print
-    scrot -u '%a-%b_%d_%Y-%T.png' -e 'mv $f ~/Pictures/screenshots'
+    scrot -u '%F_%I-%M-%S.png' -e 'mv $f ~/Pictures/screenshots'
 
 #MAIM
 # Selection to clipboard
