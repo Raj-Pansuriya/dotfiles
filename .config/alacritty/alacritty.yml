@@ -1,5 +1,16 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
+# Import additional configuration files
+#
+# Imports are loaded in order, skipping all missing files, with the importing
+# file being loaded last. If a field is already present in a previous import, it
+# will be replaced.
+#
+# All imports must either be absolute paths starting with `/`, or paths relative
+# to the user's home directory starting with `~/`.
+#import:
+#  - /path/to/alacritty.yml
+
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -324,6 +335,8 @@ colors:
 background_opacity: 0.8
 
 #selection:
+  # This string contains all characters that are used as separators for
+  # "semantic words" in Alacritty.
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
@@ -344,6 +357,10 @@ background_opacity: 0.8
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
   #unfocused_hollow: true
+
+  # Thickness of the cursor relative to the cell width as floating point number
+  # from `0.0` to `1.0`.
+  #thickness: 0.15
 
 # Live config reload (changes require restart)
 #live_config_reload: true
@@ -443,6 +460,10 @@ background_opacity: 0.8
 #
 # Mouse bindings are specified as a list of objects, much like the key
 # bindings further below.
+#
+# To trigger mouse bindings when an application running within Alacritty
+# captures the mouse, the `Shift` modifier is automatically added as a
+# requirement.
 #
 # Each mouse binding will specify a:
 #
@@ -580,3 +601,8 @@ key_bindings:
   - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
   - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
   - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
+
+
+# Imorting Dracula color scheme
+import:
+  - /home/raj/.config/alacritty/dracula.yml/
