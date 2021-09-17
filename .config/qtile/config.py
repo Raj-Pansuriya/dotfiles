@@ -234,7 +234,7 @@ layouts = [
     #layout.Tile(shift_windows=True, **layout_theme),
     #layout.VerticalTile(**layout_theme),
     #layout.Matrix(**layout_theme),
-    #layout.Zoomy(**layout_theme),
+    layout.Zoomy(**layout_theme),
     layout.MonadTall(**layout_theme),
     layout.Max(**layout_theme),
     # layout.Stack(num_stacks=2,**layout_theme),
