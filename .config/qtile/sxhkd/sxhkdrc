@@ -83,6 +83,10 @@ super + shift+ p
 super + shift + d
 	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
 
+#rofi emoji selector
+super + e
+    rofi -show emoji -modi emoji
+
 #reload sxhkd:
 super + shift + s
 	pkill -USR1 -x sxhkd
